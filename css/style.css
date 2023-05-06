@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    top: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.stat-btn {
+    background: #fe3d00;
+    color: #fffefe;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+/* pageloader */
+#loading {
+    background: url('/PageLoader/prealoader-img.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+/* Information section of navigation bar */
+#info-header {
+    background: linear-gradient(
+        120deg,
+        #fe3d00 0%,
+        #fe3d00 60%,
+        #252729 60%,
+        #252729 100%
+    );
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+#info-header li,
+#info-header a,
+#list-sec ul {
+    list-style: none;
+    text-decoration: none;
+    color: #fffefe;
+}
+
+#info-social i{
+    color: #fffefe;
+}
+
+#info-sec ul{
+    display: flex;
+    gap: 20px;
+}
+
+#info-social ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation bar list section */
+#navbar-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: #fffefe;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+#list-sec ul {
+    color: #252729;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#home-sec {
+    position: relative;
+}
+
+.background-img {
+    position: relative;
+    height: 88vh;
+    width: 100%;
+}
+
+.home-person {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    height: 84vh;
+}
+
+#home-text .small-heading{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    color: #252729;
+    font-weight: 700;
+    border-top: 2px solid #fe3d00;
+    letter-spacing: 2px;
+}
+
+#home-text .big-heading{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    font-weight: 900;
+    font-size: 64px;
+}
+
+#home-text .para {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #3c3c3c;
+    font-size: 18px;
+}
+
+.home-btn {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+}
+
+.home-btn i {
+    margin-left: 5px;
+}
+
+#home-text .play-btn {
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    font-size: 48px;
+    margin-top: 35px;
+    margin-left: 5px;
+    color: #fe3d00;
+}
+
+#home-text .play-btn:hover {
+    color: #0a53ae;
+    scale: 1.2;
+    transition: all 0.4s ease-in-out;
+}
+
+/* About us Section */
+#about-sec {
+    display: flex;
+    gap: 50px;
+    margin: 80px 200px;
+    justify-content: center;
+}
+
+#about-img img{
+    height: 500px;
+}
+
+#about-text>h5,
+.choose-us-des>h5 {
+    color: #fe3d00;
+    font-size: 16px;
+}
+
+#about-text h1,
+#choose-us h1  {
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#about-text hr,
+#choose-us hr {
+    background-color: #ff4400;
+    width: 10%;
+    border-width: 0;
+    height: 10px;
+}
+
+#about-text h1 span,
+#choose-us h1 span {
+    color: #fe3d00;
+}
+
+#about-text>p{
+    color: #3c3c3c;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.experience-icon i,
+.support-icon i{
+   scale: 3;
+   color: #fe3d00;
+}
+
+.user-experience,
+.quick-support {
+    display:flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.experience-text h5,
+.support-text h5 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.experience-text p,
+.support-text p{
+    color: #3c3c3c;
+}
+
+/* Services section */
+#service {
+    background-color: #F4F7FC;
+    background-image: url('/images/service-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto;
+    /* height: 100vh; */
+    z-index: -1;
+    padding-bottom: 100px;
+}
+
+.service-heading {
+    display: flex;
+    padding: 80px 200px 40px 200px; 
+    justify-content: center;   
+    flex-wrap: nowrap;
+}
+
+.service-topic {
+   width: 100%;
+   margin-right: 40px;
+}
+
+.service-topic h5 {
+    color:#fe3d00;
+    font-size: 16px;
+}
+
+.service-topic h1 {
+    font-weight: 600;
+}
+
+.service-para p {
+    color: #6d6d6d;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.service-images {
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.service-images .card {
+    width: 350px;
+    margin: 0px 15px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.service-images .card h5 {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.service-images .card p {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    top: 590px;
+    left: auto;
+}
+
+.slick-dots li button::before{
+    font-size: 15px;
+    color: #dddddd;
+    /* line-height: 50px; */
+}
+
+.slick-dots li button:hover::before{
+    color: #dddddd;
+}
+
+.slick-dots li.slick-active button::before{
+    color:#ff4400;
+}
+
+.service-images .card img {
+    border-radius: 10px;
+}
+
+.service-images .card .card-body i {
+    margin-left: 10px;
+}
+
+.read-more {
+    width: 100%;
+    background-color: #F4F7FC;
+    text-align: left;
+    padding: 15px;
+    border-radius: 0;
+}
+
+.read-more:hover {
+    background-color: #fe3d00;
+    color:#F4F7FC;
+    font-weight: 600;
+}
+
+/* why choose us section */
+#choose-us {
+    background: url('/images/choose-use-bg.jpg');
+    background-position: top center;
+    height: 100vh;
+    display: flex;
+    padding: 40px 100px;
+    align-items: center;
+    gap: 80px;
+}
+
+#choose-us h1,
+.product-design h5,
+.big-data h5,
+.maintain-data h5 {
+    color: #fffefe; 
+}
+
+.choose-us-des>p {
+    margin-bottom: 50px;
+}
+
+.product-design,
+.big-data,
+.maintain-data {
+    display:flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-design p,
+.big-data p,
+.maintain-data p,
+.choose-us-des>p {
+    color: #e2e0e0;
+}
+
+.product-icon i,
+.data-icon i,
+.maintain-icon i{
+   scale: 3;
+   color: #fe3d00;
+}
+
+/* Our team image section */
+#our-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 200px;
+    gap: 20px;
+}
+
+.team-card:hover {
+    transform: translateY(-15px);
+    transition: all 0.3s ease-in-out;       
+}
+
+.team-card img {
+    width: 22em;
+}
+
+.team-card .img-caption {
+    position: relative;
+    width: 17em;
+    top: -50px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px -7px;
+}
+
+.team-card .img-caption p {
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    color: #6d6d6d;
+}
+
+.team-card .img-caption a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.team-card .img-caption a:hover {
+    color: #ff4400;
+    transition: all 0.3s ease-in;
+} 
+
+/* Appointment section */
+#appointment {
+    background-image: url('/images/appointment-map.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+#appointment img {
+    height: 700px;
+    max-width: 550px;
+}
+
+#appointment-form {
+    position: relative;
+    left: -100px;
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+#appointment-form h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#appointment-form p {
+    color: #6d6d6d;
+    margin-bottom: 40px;
+}
+
+#appointment-form input{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    background-color: #F4F7FC;
+}
+
+#appointment-form textarea {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #F4F7FC;
+    margin-bottom: 20px;
+}
+
+.appointment-btn {
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    color: #F4F7FC;
+    background-color: #ff4400;
+    margin-top: 5px;
+}

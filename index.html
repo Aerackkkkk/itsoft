@@ -1,67 +1,281 @@
 <!DOCTYPE html>
-<html html lang="en">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <script src="https://kit.fontawesome.com/fc3004134c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>IT-Soft-IT-Solution</title>
+</head>
+<body>
+    <!-- <div id="loading">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>My portfolio</title>
-    </head>
+    </div> -->
+    <header>
+        <nav id="info-header">
+            <div id="info-sec">
+                <ul>
+                    <li><a href="mailto:example@example.com"><i class="fa-sharp fa-regular fa-envelope"></i>&nbsp;&nbsp; example@example.com</a></li>
+                    <li><i class="fa-sharp fa-solid fa-street-view"></i>&nbsp;&nbsp;1st Floor New World</li>
+                    <li><a href="tel:+880 320 432 242"><i class="fa-sharp fa-solid fa-phone-flip"></i>&nbsp;&nbsp;+880 320 432 242</a></li>
+                </ul>
+            </div>
+            <div id="info-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="navbar-container">
+            <div id="logo-sec">
+                <a href="#"><img src="./images/main-logo.png" alt="company logo"></a>
+            </div>
+            <div id="list-sec">
+                <ul>
+                    <li>Home</li>
+                    <li>Company</li>
+                    <li>Service</li>
+                    <li>Portfolio</li>
+                    <li>Blogs</li>
+                    <li>Contact</li>
+                    <button class="stat-btn">Get A Quote</button>
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home-sec">
+        <img class="background-img" src="./images/background.jpg">
+        <img class="home-person" src="./images/home.png" alt="">
+        <div id="home-text">
+            <h5 class="small-heading">SECURE & IT SERVICES</h5>
+            <h1 class="big-heading">Excellent IT services <br> for your success</h1>
+            <p class="para">Pellentesque at posuere tellus phasellus scelerisque Lorem</p>
+            <button class="stat-btn home-btn">Learn More<i class="fa-solid fa-arrow-right-long"></i></button>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="play-btn"><i class="fa-sharp fa-solid fa-circle-play"></i></a>
+        </div>
+    </section>
 
-    <body>
-        <header>
-            <img src="Me.jpg" alt="my picture">
-            
-            <nav>
-                <ul>
-                    <li><h1>Name: Anjal Thapa</h1>
-                        <h1>Address: Godawari 13</h1>
-                        <h1>Email: Aenjaal@gmail.com</h1>
-                        <h1>Contact: 9860114811</h1></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hello i am currently studying CSIT(8th sem) and learning a lot lately. I like doing a lot of things
-                    so i won't specify a single one here. If you know me, you don't and if you don't call me<strong>
-                        Anjal Thapa.</strong> </p>
-            </section>
-            <section id="skills">
-                <h2>Skills i have acquired over time</h2>
-                <ul>
-                    <li>Good listener</li>
-                    <li>Passionate learner</li>
-                    <li>Deep Thinker</li>
-                    <li>Guffadi Expert</li>
-                </ul>
-            </section>
-            <section id="projects">
-                <h2>Projects garna baki</h2>
-                <ul>
-                    <li><a href="#">Bootstrap </a></li>
-                    <li><a href="#">JS and TS</a></li>
-                    <li><a href="#">React and angular</a></li>
-                    <li><a href="#">Database connectivity</a></li>
-                </ul>
-            </section>
-            <section id="contact">
-                <h2>If any queries arises please fill out the form below</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright &copy; Anjal Thapa</p>
-        </footer>
-    </body>
+    <section id="about-sec">
+        <div id="about-img">
+            <img src="./images/about-us.jpg" alt="About us image">
+        </div>
+        <div id="about-text">
+            <h5>// ABOUT COMPANY</h5>
+            <h1>We Deal With The Aspects Of Professional <span>IT Services</span></h1>
+            <hr>
+            <p>ITSoft is the partner of choice for many of the world’s leading and enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development.</p>
+            <div class="user-experience">
+                <div class="experience-icon">
+                    <i class="fa-sharp fa-solid fa-users"></i>
+                </div>
+                <div class="experience-text">
+                    <h5>User Experience</h5>
+                    <p>Skilled professionals are always ready to provide reliable services to our clients!</p>
+                </div>
+            </div>
+            <div class="quick-support">
+                <div class="support-icon">
+                    <i class="fa-regular fa-clock"></i> 
+                </div>
+                <div class="support-text">
+                    <h5>Quick Support</h5>
+                    <p>Branches are situated in major metro cities and overseas, always open for you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="service-heading">
+            <div class="service-topic">
+                <h5>// OUR SERVICES</h5>
+                <h1>What We Provide</h1>
+            </div>
+            <div class="service-para">
+                <p>Aliquam sodales justo sit amet urna auctor scelerisquinterdum leo anet tempus enim and esent egetis hendrerit vel nibh vitae ornar sem velit aliquam facilisivitae finibus risus feslin is hendrerit vel nibh vitae ornar uspendisse consequat quis sem.</p>
+            </div>
+        </div>
+        <div class="service-images container">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./images/service1.jpg" class="img-fluid"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">IT Management</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cumque magni eveniet quaerat dicta unde aut quae quo. Veritatis, aut.</p>
+                  <a href="#" class="btn read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src='./images/service2.jpg' class="img-fluid"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cloud Services</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam atque eligendi numquam minima aut non inventore hic et culpa doloribus?</p>
+                  <a href="#" class="btn read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./images/service3.jpg" class="img-fluid"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cloud Computing</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio enim possimus tempore alias? Possimus at adipisci unde debitis, nostrum facilis?</p>
+                  <a href="#" class="btn read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="./images/service4.jpg" class="img-fluid"/>
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">IT Consultancy</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sit maxime debitis excepturi fuga qui consectetur temporibus a quibusdam</p>
+                  <a href="#" class="btn read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="choose-us">
+        <div class="choose-us-img">
+            <img src="./images/about-img.png" alt="">
+        </div>
+        <div class="choose-us-des">
+            <h5>// WHY CHOOSE US</h5>
+            <h1>Some Of Reason For Choose <br> Our <span>IT Solutions</span></h1>
+            <hr>
+            <p>We provide immigration service in all over country and universities. orem semper sede tellus in ultrices. Nam hendrerit elit vel urna.</p>
+            <div class="product-design">
+                <div class="product-icon">
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                </div>
+                <div class="product-text">
+                    <h5>Product Designs</h5>
+                    <p>Skilled professionals are always ready to provide reliable services to our clients!</p>
+                </div>
+            </div>
+            <div class="big-data">
+                <div class="data-icon">
+                    <i class="fa-solid fa-chart-simple"></i> 
+                </div>
+                <div class="data-text">
+                    <h5>Big Data & Analytics</h5>
+                    <p>Branches are situated in major metro cities and overseas, always open for you!</p>
+                </div>
+            </div>
+            <div class="maintain-data">
+                <div class="maintain-icon">
+                    <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="maintain-text">
+                    <h5>Maintain App Data</h5>
+                    <p>Branches are situated in major metro cities and overseas, always open for you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="service-heading">
+            <div class="service-topic">
+                <h5>// PROFESSIONAL TEAM</h5>
+                <h1>Our Dedicated Team</h1>
+            </div>
+            <div class="service-para">
+                <p>Aliquam sodales justo sit amet urna auctor scelerisquinterdum leo anet tempus enim and esent egetis hendrerit vel nibh vitae ornar sem velit aliquam facilisivitae finibus risus feslin is hendrerit vel nibh vitae ornar uspendisse consequat quis sem.</p>
+            </div>
+        </div>
+
+        <div id="our-team">
+            <div class="team-card">
+                <img src="./images/team1.jpg" alt="my team">
+                <div class="img-caption">
+                    <h5><a href="#">Angel Zara</a></h5>
+                    <p>MIGRATION AGENT</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="./images/team2.jpg" alt="my team">
+                <div class="img-caption">
+                    <h5><a href="#">Shene Watson</a></h5>
+                    <p>VISA DIRECTOR</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="./images/team3.jpg" alt="my team">
+                <div class="img-caption">
+                    <h5><a href="#">Fahmida Haque</a></h5>
+                    <p>CO-FOUNDER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <img src="./images/appointment-img.jpg" alt="appointment image">
+
+        <form id="appointment-form">
+            <h3>Request Free Consultation</h3>
+            <p>Get in touch and discover how we can help. We aim to be in touch for consultation</p>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea cols="30" rows="4">Your Message</textarea>
+            <button class="appointment-btn">Send Request</button>
+        </form>
+          
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.service-images').slick({
+                infinite: true,
+                speed: 300,
+                dots: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                variableWidth: true
+            });
+        });
+    </script>
+   <!-- <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        dots:true
+      });
+    });
+  </script> -->
+
+</body>
 </html>
